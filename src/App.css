@@ -1,38 +1,85 @@
-.App {
+body{
+  background-color: hsl(0,0%,10%);
+}
+.to-do-list {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  font-size: 4rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-button {
+  margin-left: 15px;
+  background-color: hsl(125, 47%, 54%);
+}
+
+.add-button:hover {
+  background-color: hsl(125, 47%, 44%);
+}
+
+.delete-button {
+  background-color: hsl(10, 77%, 54%);
+}
+
+.delete-button:hover {
+  background-color: hsl(10, 77%, 44%);
+}
+
+.move-button {
+  background-color: hsl(210, 87%, 60%);
+}
+
+.move-button:hover {
+  background-color: hsl(210, 87%, 50%);
+}
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsla(0,0%,80%,0.5);
+  border-radius: 5px;
+  color: hsla(0,0%,0%,0.5);
+}
+ol{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+li{
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 15px;
+  background-color: hsla(0, 0%, 97%, 0.94);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0,0%,85%,0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 500px;
+}
+.text{
+  padding-left: 10px;
+  text-align: start;
+  flex: 1;
+}
+.delete-button, .move-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
 }
